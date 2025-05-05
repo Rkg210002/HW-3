@@ -93,15 +93,25 @@ public class AverageTest {
 
 
 ## (f) Fault Injection and Analysis
+
+
 Injected Fault: Change int n = Math.min(k, list.length); to int n = Math.max(k, list.length);
+
 Expected Failures:
+
 assertEquals(5, new Average().average(6, new int[]{5, 5, 5})); // Will likely throw ArrayIndexOutOfBoundsException
 
+
 Fix: Revert Math.max to Math.min.
-Analysis: The injected fault causes the function to try accessing more elements than exist in the list, leading to a runtime exception. This demonstrates that test cases effectively catch such boundary errors.
+
+Analysis: The injected fault causes the function to try accessing more elements than exist in the list, leading to a runtime exception. This demonstrates that 
+
+test cases effectively catch such boundary errors.
 
 ## (g) Code Coverage 
+
 To measure coverage using EclEmma in Eclipse:
+
 Open Eclipse → Right-click on the test file → Choose Coverage As → JUnit Test.
 
 
