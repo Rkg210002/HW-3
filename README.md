@@ -42,12 +42,20 @@ average(3, new int[]{}) → 0         // Partition 4
 
 
 (d) Boundary Value Test Cases 
+
+
 Test Cases:
+
 average(1, new int[]{100}) → 100        // Minimum non-zero list
+
 average(1, new int[]{50, 60}) → 50      // Minimum k = 1
+
 average(Integer.MAX_VALUE, new int[]{1, 2, 3}) → 2 // Check capping at list.length
+
 average(-1, new int[]{1, 2, 3}) → 0     // Negative k
+
 average(3, new int[]{0, 0, 0}) → 0      // All zero values
+
 
 (e) JUnit Test Code 
 import static org.junit.Assert.*;
