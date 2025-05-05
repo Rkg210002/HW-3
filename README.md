@@ -9,23 +9,33 @@ average(3, new int[]{10, 20, 30, 40, 50}) → returns 20
 Explanation: It sums the first 3 elements (10 + 20 + 30 = 60) and divides by 3 → 60 / 3 = 20.
 
 (c) Partition Test Cases
+
 Partitions:
+
 k <= 0
+
 
 
 k > list.length
 
 
+
 0 < k <= list.length
+
 
 
 list.length == 0
 
 
+
 Partition Test Cases:
+
 average(0, new int[]{1, 2, 3}) → 0   // Partition 1
+
 average(6, new int[]{5, 5, 5}) → 5   // Partition 2
+
 average(2, new int[]{4, 6, 8}) → 5   // Partition 3
+
 average(3, new int[]{}) → 0         // Partition 4
 
 
